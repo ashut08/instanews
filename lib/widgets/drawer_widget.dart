@@ -26,13 +26,14 @@ class DrawerWidget extends StatelessWidget {
                         shape: BoxShape.circle,
                         image: DecorationImage(
                             fit: BoxFit.fill,
-                            image: AssetImage("assets/images/profile.png"))),
+                            image:
+                                AssetImage("assets/images/profile_pic.jpg"))),
                   ),
                   SizedBox(
                     height: 5.0,
                   ),
                   Text(
-                    "John Doe",
+                    "Ashutosh Singh",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 20,
@@ -41,7 +42,7 @@ class DrawerWidget extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    "johndoe@gmail.com",
+                    "ashusingh.unch8@gmail.com",
                     style:
                         TextStyle(fontSize: 14, color: Colors.white, height: 1),
                   )
@@ -75,20 +76,76 @@ class DrawerWidget extends StatelessWidget {
           SizedBox(
             height: 10.0,
           ),
-          _buildListTile("My Profile", Icon(Icons.perm_identity, color: Colors.blueAccent,), '/profile'),
-          SizedBox(height: 5.0,),
-          _buildListTile("Saved News", Icon(Icons.bookmark_border, color: Colors.blueAccent,), '/savedNews'),
-          SizedBox(height: 5.0,),
-          _buildListTile("Settings", Icon(Icons.settings, color: Colors.blueAccent,), ''),
-          SizedBox(height: 5.0,),
-          _buildListTile("Sources", Icon(Icons.info_outline, color: Colors.blueAccent,), '/sources'),
-          SizedBox(height: 5.0,),
-          _buildListTile("Help Centre", Icon(Icons.help, color: Colors.blueAccent,), ''),
-          SizedBox(height: 5.0,),
-          _buildListTile("Contact Us", Icon(Icons.contacts, color: Colors.blueAccent,), ''),
-          SizedBox(height: 5.0,),
-          _buildListTile("About Us", Icon(Icons.info, color: Colors.blueAccent,), ''),
-          SizedBox(height: 5.0,),
+          _buildListTile(
+              "My Profile",
+              Icon(
+                Icons.perm_identity,
+                color: Colors.blueAccent,
+              ),
+              '/profile'),
+          SizedBox(
+            height: 5.0,
+          ),
+          _buildListTile(
+              "Saved News",
+              Icon(
+                Icons.bookmark_border,
+                color: Colors.blueAccent,
+              ),
+              '/savedNews'),
+          SizedBox(
+            height: 5.0,
+          ),
+          _buildListTile(
+              "Settings",
+              Icon(
+                Icons.settings,
+                color: Colors.blueAccent,
+              ),
+              ''),
+          SizedBox(
+            height: 5.0,
+          ),
+          _buildListTile(
+              "Sources",
+              Icon(
+                Icons.info_outline,
+                color: Colors.blueAccent,
+              ),
+              '/sources'),
+          SizedBox(
+            height: 5.0,
+          ),
+          _buildListTile(
+              "Help Centre",
+              Icon(
+                Icons.help,
+                color: Colors.blueAccent,
+              ),
+              ''),
+          SizedBox(
+            height: 5.0,
+          ),
+          _buildListTile(
+              "Contact Us",
+              Icon(
+                Icons.contacts,
+                color: Colors.blueAccent,
+              ),
+              ''),
+          SizedBox(
+            height: 5.0,
+          ),
+          _buildListTile(
+              "About Us",
+              Icon(
+                Icons.info,
+                color: Colors.blueAccent,
+              ),
+              ''),
+          SizedBox(
+            height: 5.0,
+          ),
         ],
       ),
     );

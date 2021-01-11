@@ -102,9 +102,16 @@ class _HomePageState extends State<HomePage> {
                         decoration: BoxDecoration(
                             color: Colors.white,
                             gradient: LinearGradient(
-                              begin: FractionalOffset.bottomCenter,
-                              end: FractionalOffset.center,
-                            )),
+                                begin: FractionalOffset.bottomCenter,
+                                end: FractionalOffset.center,
+                                colors: [
+                                  Colors.black.withOpacity(0.55),
+                                  Colors.black.withOpacity(0.15)
+                                ],
+                                stops: [
+                                  0.5,
+                                  3
+                                ])),
                         alignment: Alignment.bottomCenter,
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.end,
