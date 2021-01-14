@@ -10,6 +10,8 @@ import 'package:share/share.dart';
 import 'package:sqflite/sqflite.dart';
 
 import 'package:path/path.dart' as p;
+import 'package:flare_flutter/flare_actor.dart';
+import 'package:flare_flutter/flare_controls.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -20,6 +22,8 @@ class _HomePageState extends State<HomePage> {
   String url =
       "http://newsapi.org/v2/top-headlines?apiKey=33b24be8d9404eef8fed1bee30c73f2f&country=in";
   bool isLoaded = false;
+  bool isLiked = false;
+  final FlareControls flareControls = FlareControls();
 
   List<Post> posts = List();
 
@@ -181,8 +185,14 @@ class _HomePageState extends State<HomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
                 IconButton(
-                  icon: Icon(Icons.favorite_border),
-                  onPressed: () {},
+                  icon: Icon(isLiked ? Icons.favorite : Icons.favorite_border),
+                  onPressed: () {
+                    setState(() {
+                      isLiked = !isLiked;
+                    });
+
+                    flareControls.play("like");
+                  },
                 ),
                 IconButton(
                   icon: Icon(Icons.bookmark_border),
