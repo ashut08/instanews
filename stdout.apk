@@ -1,0 +1,522 @@
+[ +283 ms] executing: [/home/demo/flutter/] git -c log.showSignature=false log -n 1 --pretty=format:%H
+[ +142 ms] Exit code 0 from: git -c log.showSignature=false log -n 1 --pretty=format:%H
+[        ] 78910062997c3a836feee883712c241a5fd22983
+[   +1 ms] executing: [/home/demo/flutter/] git tag --points-at HEAD
+[ +551 ms] Exit code 0 from: git tag --points-at HEAD
+[        ] 1.22.5
+[  +52 ms] executing: [/home/demo/flutter/] git rev-parse --abbrev-ref --symbolic @{u}
+[  +24 ms] Exit code 0 from: git rev-parse --abbrev-ref --symbolic @{u}
+[        ] origin/stable
+[        ] executing: [/home/demo/flutter/] git ls-remote --get-url origin
+[  +19 ms] Exit code 0 from: git ls-remote --get-url origin
+[        ] https://github.com/flutter/flutter.git
+[ +115 ms] executing: [/home/demo/flutter/] git rev-parse --abbrev-ref HEAD
+[  +22 ms] Exit code 0 from: git rev-parse --abbrev-ref HEAD
+[        ] stable
+[ +179 ms] Artifact Instance of 'AndroidMavenArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[  +18 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[  +74 ms] Artifact Instance of 'MaterialFonts' is not required, skipping update.
+[        ] Artifact Instance of 'GradleWrapper' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidMavenArtifacts' is not required, skipping update.
+[  +13 ms] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterSdk' is not required, skipping update.
+[        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FontSubsetArtifacts' is not required, skipping update.
+[ +251 ms] Found plugin flutter_webview_plugin at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_webview_plugin-0.3.11/
+[  +27 ms] Found plugin path_provider_linux at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-0.0.1+2/
+[  +12 ms] Found plugin path_provider_windows at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-0.0.4+3/
+[  +20 ms] Found plugin share at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/share-0.6.5+4/
+[  +12 ms] Found plugin shared_preferences at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-0.5.12+4/
+[   +4 ms] Found plugin shared_preferences_linux at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_linux-0.0.2+4/
+[   +8 ms] Found plugin shared_preferences_macos at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_macos-0.0.1+11/
+[  +12 ms] Found plugin shared_preferences_web at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_web-0.1.2+7/
+[   +5 ms] Found plugin shared_preferences_windows at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_windows-0.0.1+3/
+[  +29 ms] Found plugin sqflite at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite-1.3.2+1/
+[  +85 ms] Found plugin url_launcher at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher-5.7.10/
+[   +8 ms] Found plugin url_launcher_linux at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_linux-0.0.1+4/
+[  +11 ms] Found plugin url_launcher_macos at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_macos-0.0.1+9/
+[  +10 ms] Found plugin url_launcher_web at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_web-0.1.5+1/
+[   +8 ms] Found plugin url_launcher_windows at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_windows-0.0.1+3/
+[ +329 ms] Found plugin flutter_webview_plugin at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_webview_plugin-0.3.11/
+[  +15 ms] Found plugin path_provider_linux at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-0.0.1+2/
+[   +5 ms] Found plugin path_provider_windows at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-0.0.4+3/
+[   +8 ms] Found plugin share at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/share-0.6.5+4/
+[   +5 ms] Found plugin shared_preferences at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-0.5.12+4/
+[   +5 ms] Found plugin shared_preferences_linux at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_linux-0.0.2+4/
+[   +4 ms] Found plugin shared_preferences_macos at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_macos-0.0.1+11/
+[   +5 ms] Found plugin shared_preferences_web at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_web-0.1.2+7/
+[   +4 ms] Found plugin shared_preferences_windows at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_windows-0.0.1+3/
+[   +7 ms] Found plugin sqflite at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite-1.3.2+1/
+[  +21 ms] Found plugin url_launcher at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher-5.7.10/
+[   +3 ms] Found plugin url_launcher_linux at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_linux-0.0.1+4/
+[   +2 ms] Found plugin url_launcher_macos at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_macos-0.0.1+9/
+[   +4 ms] Found plugin url_launcher_web at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_web-0.1.5+1/
+[   +2 ms] Found plugin url_launcher_windows at /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_windows-0.0.1+3/
+[ +127 ms] Generating /home/demo/Documents/flutter/instanews/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
+[ +102 ms] You are building a fat APK that includes binaries for android-arm, android-arm64, android-x64.
+[        ] If you are deploying the app to the Play Store, it's recommended to use app bundles or split the APK to reduce the APK size.
+[        ]     To generate an app bundle, run:
+[        ]         flutter build appbundle --target-platform android-arm,android-arm64,android-x64
+[        ]         Learn more on: https://developer.android.com/guide/app-bundle
+[        ]     To split the APKs per ABI, run:
+[        ]         flutter build apk --target-platform android-arm,android-arm64,android-x64 --split-per-abi
+[        ]         Learn more on:  https://developer.android.com/studio/build/configure-apk-splits#configure-abi-split
+[  +78 ms] Running Gradle task 'assembleRelease'...
+[   +7 ms] gradle.properties already sets `android.enableR8`
+[   +9 ms] Using gradle from /home/demo/Documents/flutter/instanews/android/gradlew.
+[   +5 ms] /home/demo/Documents/flutter/instanews/android/gradlew mode: 33277 rwxrwxr-x.
+[  +47 ms] executing: /home/demo/android-studio-ide-193.6626763-linux/android-studio/jre/bin/java -version
+[ +322 ms] Exit code 0 from: /home/demo/android-studio-ide-193.6626763-linux/android-studio/jre/bin/java -version
+[        ] openjdk version "1.8.0_242-release"
+           OpenJDK Runtime Environment (build 1.8.0_242-release-1644-b3-6222593)
+           OpenJDK 64-Bit Server VM (build 25.242-b3-6222593, mixed mode)
+[   +6 ms] executing: [/home/demo/Documents/flutter/instanews/android/] /home/demo/Documents/flutter/instanews/android/gradlew -Pverbose=true -Ptarget-platform=android-arm,android-arm64,android-x64 -Ptarget=lib/main.dart -Ptrack-widget-creation=true -Pshrink=true -Ptree-shake-icons=true assembleRelease
+[+9373 ms] > Transform annotations.jar (org.jetbrains:annotations:13.0) with JetifyTransform
+[        ] > Transform annotations.jar (org.jetbrains:annotations:13.0) with IdentityTransform
+[        ] > Transform annotation.jar (androidx.annotation:annotation:1.1.0) with JetifyTransform
+[        ] > Transform annotation.jar (androidx.annotation:annotation:1.1.0) with IdentityTransform
+[        ] > Transform kotlin-stdlib-common.jar (org.jetbrains.kotlin:kotlin-stdlib-common:1.3.50) with JetifyTransform
+[        ] > Transform kotlin-stdlib-common.jar (org.jetbrains.kotlin:kotlin-stdlib-common:1.3.50) with IdentityTransform
+[        ] > Transform lifecycle-viewmodel.aar (androidx.lifecycle:lifecycle-viewmodel:2.1.0) with JetifyTransform
+[        ] > Transform collection.jar (androidx.collection:collection:1.1.0) with JetifyTransform
+[        ] > Transform collection.jar (androidx.collection:collection:1.1.0) with IdentityTransform
+[        ] > Transform lifecycle-viewmodel.aar (androidx.lifecycle:lifecycle-viewmodel:2.1.0) with ExtractAarTransform
+[        ] > Transform versionedparcelable.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with JetifyTransform
+[        ] > Transform lifecycle-viewmodel.aar (androidx.lifecycle:lifecycle-viewmodel:2.1.0) with AarCompileClassesTransform
+[        ] > Transform versionedparcelable.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with ExtractAarTransform
+[        ] > Transform core-common.jar (androidx.arch.core:core-common:2.1.0) with JetifyTransform
+[        ] > Transform core-common.jar (androidx.arch.core:core-common:2.1.0) with IdentityTransform
+[        ] > Transform versionedparcelable.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with AarCompileClassesTransform
+[  +15 ms] > Transform core-runtime.aar (androidx.arch.core:core-runtime:2.0.0) with JetifyTransform
+[        ] > Transform lifecycle-common.jar (androidx.lifecycle:lifecycle-common:2.2.0) with JetifyTransform
+[   +2 ms] > Transform lifecycle-common.jar (androidx.lifecycle:lifecycle-common:2.2.0) with IdentityTransform
+[   +2 ms] > Transform core-runtime.aar (androidx.arch.core:core-runtime:2.0.0) with ExtractAarTransform
+[   +1 ms] > Transform lifecycle-livedata-core.aar (androidx.lifecycle:lifecycle-livedata-core:2.0.0) with JetifyTransform
+[   +4 ms] > Transform core-runtime.aar (androidx.arch.core:core-runtime:2.0.0) with AarCompileClassesTransform
+[   +1 ms] > Transform lifecycle-livedata-core.aar (androidx.lifecycle:lifecycle-livedata-core:2.0.0) with ExtractAarTransform
+[  +47 ms] > Transform lifecycle-livedata.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with JetifyTransform
+[        ] > Transform lifecycle-livedata-core.aar (androidx.lifecycle:lifecycle-livedata-core:2.0.0) with AarCompileClassesTransform
+[        ] > Transform lifecycle-livedata.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with ExtractAarTransform
+[        ] > Transform savedstate.aar (androidx.savedstate:savedstate:1.0.0) with JetifyTransform
+[        ] > Transform lifecycle-livedata.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with AarCompileClassesTransform
+[        ] > Transform savedstate.aar (androidx.savedstate:savedstate:1.0.0) with ExtractAarTransform
+[        ] > Transform lifecycle-runtime.aar (androidx.lifecycle:lifecycle-runtime:2.2.0) with JetifyTransform
+[        ] > Transform savedstate.aar (androidx.savedstate:savedstate:1.0.0) with AarCompileClassesTransform
+[        ] > Transform lifecycle-runtime.aar (androidx.lifecycle:lifecycle-runtime:2.2.0) with ExtractAarTransform
+[        ] > Transform core.aar (androidx.core:core:1.3.1) with JetifyTransform
+[        ] > Transform lifecycle-runtime.aar (androidx.lifecycle:lifecycle-runtime:2.2.0) with AarCompileClassesTransform
+[        ] > Transform core.aar (androidx.core:core:1.3.1) with ExtractAarTransform
+[        ] > Transform customview.aar (androidx.customview:customview:1.0.0) with JetifyTransform
+[        ] > Transform core.aar (androidx.core:core:1.3.1) with AarCompileClassesTransform
+[        ] > Transform customview.aar (androidx.customview:customview:1.0.0) with ExtractAarTransform
+[        ] > Transform loader.aar (androidx.loader:loader:1.0.0) with JetifyTransform
+[        ] > Transform customview.aar (androidx.customview:customview:1.0.0) with AarCompileClassesTransform
+[        ] > Transform loader.aar (androidx.loader:loader:1.0.0) with ExtractAarTransform
+[        ] > Transform viewpager.aar (androidx.viewpager:viewpager:1.0.0) with JetifyTransform
+[        ] > Transform loader.aar (androidx.loader:loader:1.0.0) with AarCompileClassesTransform
+[        ] > Transform viewpager.aar (androidx.viewpager:viewpager:1.0.0) with ExtractAarTransform
+[        ] > Transform activity.aar (androidx.activity:activity:1.0.0) with JetifyTransform
+[        ] > Transform viewpager.aar (androidx.viewpager:viewpager:1.0.0) with AarCompileClassesTransform
+[        ] > Transform activity.aar (androidx.activity:activity:1.0.0) with ExtractAarTransform
+[        ] > Transform fragment.aar (androidx.fragment:fragment:1.1.0) with JetifyTransform
+[        ] > Transform activity.aar (androidx.activity:activity:1.0.0) with AarCompileClassesTransform
+[  +16 ms] > Transform fragment.aar (androidx.fragment:fragment:1.1.0) with ExtractAarTransform
+[   +1 ms] > Transform lifecycle-common-java8.jar (androidx.lifecycle:lifecycle-common-java8:2.2.0) with JetifyTransform
+[        ] > Transform lifecycle-common-java8.jar (androidx.lifecycle:lifecycle-common-java8:2.2.0) with IdentityTransform
+[        ] > Transform kotlin-stdlib.jar (org.jetbrains.kotlin:kotlin-stdlib:1.3.50) with JetifyTransform
+[        ] > Transform kotlin-stdlib.jar (org.jetbrains.kotlin:kotlin-stdlib:1.3.50) with IdentityTransform
+[        ] > Transform fragment.aar (androidx.fragment:fragment:1.1.0) with AarCompileClassesTransform
+[        ] > Transform x86_64_release.jar (io.flutter:x86_64_release:1.0.0-ae90085a8437c0ae94d6b5ad2741739ebc742cb4) with JetifyTransform
+[        ] > Transform x86_64_release.jar (io.flutter:x86_64_release:1.0.0-ae90085a8437c0ae94d6b5ad2741739ebc742cb4) with IdentityTransform
+[        ] > Transform arm64_v8a_release.jar (io.flutter:arm64_v8a_release:1.0.0-ae90085a8437c0ae94d6b5ad2741739ebc742cb4) with JetifyTransform
+[        ] > Transform arm64_v8a_release.jar (io.flutter:arm64_v8a_release:1.0.0-ae90085a8437c0ae94d6b5ad2741739ebc742cb4) with IdentityTransform
+[        ] > Transform armeabi_v7a_release.jar (io.flutter:armeabi_v7a_release:1.0.0-ae90085a8437c0ae94d6b5ad2741739ebc742cb4) with JetifyTransform
+[        ] > Transform armeabi_v7a_release.jar (io.flutter:armeabi_v7a_release:1.0.0-ae90085a8437c0ae94d6b5ad2741739ebc742cb4) with IdentityTransform
+[        ] > Transform kotlin-stdlib-jdk7.jar (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.50) with JetifyTransform
+[        ] > Transform kotlin-stdlib-jdk7.jar (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.50) with IdentityTransform
+[        ] > Transform lifecycle-viewmodel.aar (androidx.lifecycle:lifecycle-viewmodel:2.1.0) with AarTransform
+[        ] > Transform versionedparcelable.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with AarTransform
+[        ] > Transform core-runtime.aar (androidx.arch.core:core-runtime:2.0.0) with AarTransform
+[        ] > Transform lifecycle-livedata-core.aar (androidx.lifecycle:lifecycle-livedata-core:2.0.0) with AarTransform
+[        ] > Transform lifecycle-livedata.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with AarTransform
+[        ] > Transform savedstate.aar (androidx.savedstate:savedstate:1.0.0) with AarTransform
+[        ] > Transform lifecycle-runtime.aar (androidx.lifecycle:lifecycle-runtime:2.2.0) with AarTransform
+[        ] > Transform flutter_embedding_release.jar (io.flutter:flutter_embedding_release:1.0.0-ae90085a8437c0ae94d6b5ad2741739ebc742cb4) with JetifyTransform
+[        ] > Transform core.aar (androidx.core:core:1.3.1) with AarTransform
+[        ] > Transform customview.aar (androidx.customview:customview:1.0.0) with AarTransform
+[        ] > Transform loader.aar (androidx.loader:loader:1.0.0) with AarTransform
+[        ] > Transform viewpager.aar (androidx.viewpager:viewpager:1.0.0) with AarTransform
+[        ] > Transform activity.aar (androidx.activity:activity:1.0.0) with AarTransform
+[   +1 ms] > Transform fragment.aar (androidx.fragment:fragment:1.1.0) with AarTransform
+[        ] > Transform flutter_embedding_release.jar (io.flutter:flutter_embedding_release:1.0.0-ae90085a8437c0ae94d6b5ad2741739ebc742cb4) with IdentityTransform
+[+2235 ms] > Task :app:compileFlutterBuildRelease
+[        ] [ +266 ms] executing: [/home/demo/flutter/] git -c log.showSignature=false log -n 1 --pretty=format:%H
+[  +98 ms] [ +211 ms] Exit code 0 from: git -c log.showSignature=false log -n 1 --pretty=format:%H
+[        ] [        ] 78910062997c3a836feee883712c241a5fd22983
+[        ] [   +2 ms] executing: [/home/demo/flutter/] git tag --points-at HEAD
+[ +115 ms] [  +29 ms] Exit code 0 from: git tag --points-at HEAD
+[        ] [        ] 1.22.5
+[        ] [  +18 ms] executing: [/home/demo/flutter/] git rev-parse --abbrev-ref --symbolic @{u}
+[        ] [  +13 ms] Exit code 0 from: git rev-parse --abbrev-ref --symbolic @{u}
+[        ] [        ] origin/stable
+[        ] [        ] executing: [/home/demo/flutter/] git ls-remote --get-url origin
+[        ] [  +25 ms] Exit code 0 from: git ls-remote --get-url origin
+[        ] [        ] https://github.com/flutter/flutter.git
+[ +182 ms] [ +143 ms] executing: [/home/demo/flutter/] git rev-parse --abbrev-ref HEAD
+[        ] [  +42 ms] Exit code 0 from: git rev-parse --abbrev-ref HEAD
+[        ] [        ] stable
+[  +99 ms] [ +123 ms] Artifact Instance of 'AndroidMavenArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] [   +5 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[  +99 ms] [  +23 ms] Artifact Instance of 'MaterialFonts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'GradleWrapper' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'AndroidMavenArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterSdk' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FontSubsetArtifacts' is not required, skipping update.
+[ +191 ms] [ +235 ms] Initializing file store
+[ +100 ms] [  +50 ms] Done initializing file store
+[ +300 ms] [ +309 ms] Skipping target: gen_localizations
+[+1499 ms] [+1517 ms] Skipping target: kernel_snapshot
+[        ] [  +10 ms] invalidated build due to missing files: /home/demo/Documents/flutter/instanews/DOES_NOT_EXIST_RERUN_FOR_WILDCARD217594344
+[ +399 ms] [ +364 ms] aot_android_asset_bundle: Starting due to {InvalidatedReason.inputMissing}
+[ +400 ms] [ +476 ms] Manifest contained wildcard assets. Inserting missing file into build graph to force rerun. for more information see #56466.
+[  +99 ms] [  +61 ms] Running command: /home/demo/flutter/bin/cache/dart-sdk/bin/dart --disable-dart-dev /home/demo/flutter/bin/cache/artifacts/engine/linux-x64/const_finder.dart.snapshot --kernel-file /home/demo/Documents/flutter/instanews/.dart_tool/flutter_build/517eda47ec786c13b8c740f0c6cd48a5/app.dill --class-library-uri package:flutter/src/widgets/icon_data.dart --class-name IconData
+[  +99 ms] [ +134 ms] Skipping target: android_aot_release_android-arm
+[ +202 ms] [ +160 ms] Skipping target: android_aot_release_android-arm64
+[ +200 ms] [ +179 ms] Skipping target: android_aot_release_android-x64
+[+1698 ms] [+1735 ms] Running font-subset: /home/demo/flutter/bin/cache/artifacts/engine/linux-x64/font-subset /home/demo/Documents/flutter/instanews/build/app/intermediates/flutter/release/flutter_assets/fonts/MaterialIcons-Regular.otf /home/demo/flutter/bin/cache/artifacts/material_fonts/MaterialIcons-Regular.otf, using codepoints 59828 59495 58791 58792 58974 59528 59663 59123 59169 59170 58873 59864 59758 59644 59846 59354 59008 59353
+[  +99 ms] [  +95 ms] aot_android_asset_bundle: Complete
+[ +400 ms] [ +440 ms] Skipping target: android_aot_bundle_release_android-arm64
+[        ] [  +10 ms] Skipping target: android_aot_bundle_release_android-arm
+[ +201 ms] [ +152 ms] Skipping target: android_aot_bundle_release_android-x64
+[        ] [        ] Skipping target: _composite
+[        ] [   +1 ms] Persisting file store
+[        ] [  +26 ms] Done persisting file store
+[        ] [  +16 ms] build succeeded.
+[ +100 ms] [  +24 ms] "flutter assemble" took 6,074ms.
+[        ] [   +7 ms] ensureAnalyticsSent: 1ms
+[        ] [   +3 ms] Running shutdown hooks
+[        ] [        ] Shutdown hooks complete
+[        ] [        ] exiting with code 0
+[  +99 ms] > Task :app:packLibsflutterBuildRelease UP-TO-DATE
+[        ] > Transform lifecycle-viewmodel.aar (androidx.lifecycle:lifecycle-viewmodel:2.1.0) with AarTransform
+[        ] > Transform interpolator.aar (androidx.interpolator:interpolator:1.0.0) with JetifyTransform
+[        ] > Transform core-runtime.aar (androidx.arch.core:core-runtime:2.0.0) with AarTransform
+[        ] > Transform interpolator.aar (androidx.interpolator:interpolator:1.0.0) with ExtractAarTransform
+[        ] > Transform interpolator.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+[        ] > Transform versionedparcelable.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with AarTransform
+[        ] > Transform lifecycle-livedata-core.aar (androidx.lifecycle:lifecycle-livedata-core:2.0.0) with AarTransform
+[        ] > Transform lifecycle-livedata.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with AarTransform
+[        ] > Transform savedstate.aar (androidx.savedstate:savedstate:1.0.0) with AarTransform
+[        ] > Transform lifecycle-runtime.aar (androidx.lifecycle:lifecycle-runtime:2.2.0) with AarTransform
+[        ] > Transform core.aar (androidx.core:core:1.3.1) with AarTransform
+[        ] > Transform customview.aar (androidx.customview:customview:1.0.0) with AarTransform
+[        ] > Transform cursoradapter.aar (androidx.cursoradapter:cursoradapter:1.0.0) with JetifyTransform
+[        ] > Transform vectordrawable.aar (androidx.vectordrawable:vectordrawable:1.1.0) with JetifyTransform
+[        ] > Transform cursoradapter.aar (androidx.cursoradapter:cursoradapter:1.0.0) with ExtractAarTransform
+[        ] > Transform cursoradapter.aar (androidx.cursoradapter:cursoradapter:1.0.0) with AarTransform
+[        ] > Transform vectordrawable.aar (androidx.vectordrawable:vectordrawable:1.1.0) with ExtractAarTransform
+[        ] > Transform vectordrawable.aar (androidx.vectordrawable:vectordrawable:1.1.0) with AarTransform
+[        ] > Transform activity.aar (androidx.activity:activity:1.0.0) with AarTransform
+[        ] > Transform loader.aar (androidx.loader:loader:1.0.0) with AarTransform
+[        ] > Transform viewpager.aar (androidx.viewpager:viewpager:1.0.0) with AarTransform
+[        ] > Transform vectordrawable-animated.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with JetifyTransform
+[        ] > Transform drawerlayout.aar (androidx.drawerlayout:drawerlayout:1.0.0) with JetifyTransform
+[        ] > Transform vectordrawable-animated.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with ExtractAarTransform
+[        ] > Transform vectordrawable-animated.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with AarTransform
+[        ] > Transform drawerlayout.aar (androidx.drawerlayout:drawerlayout:1.0.0) with ExtractAarTransform
+[        ] > Transform drawerlayout.aar (androidx.drawerlayout:drawerlayout:1.0.0) with AarTransform
+[        ] > Transform fragment.aar (androidx.fragment:fragment:1.1.0) with AarTransform
+[        ] > Transform appcompat-resources.aar (androidx.appcompat:appcompat-resources:1.1.0) with JetifyTransform
+[        ] > Transform appcompat.aar (androidx.appcompat:appcompat:1.1.0) with JetifyTransform
+[        ] > Transform appcompat-resources.aar (androidx.appcompat:appcompat-resources:1.1.0) with ExtractAarTransform
+[        ] > Transform appcompat-resources.aar (androidx.appcompat:appcompat-resources:1.1.0) with AarTransform
+[        ] > Transform appcompat.aar (androidx.appcompat:appcompat:1.1.0) with ExtractAarTransform
+[        ] > Transform interpolator.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+[        ] > Transform lifecycle-viewmodel.aar (androidx.lifecycle:lifecycle-viewmodel:2.1.0) with AarTransform
+[        ] > Transform core-runtime.aar (androidx.arch.core:core-runtime:2.0.0) with AarTransform
+[        ] > Transform cursoradapter.aar (androidx.cursoradapter:cursoradapter:1.0.0) with AarTransform
+[        ] > Transform versionedparcelable.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with AarTransform
+[        ] > Transform lifecycle-livedata-core.aar (androidx.lifecycle:lifecycle-livedata-core:2.0.0) with AarTransform
+[        ] > Transform lifecycle-livedata.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with AarTransform
+[        ] > Transform savedstate.aar (androidx.savedstate:savedstate:1.0.0) with AarTransform
+[        ] > Transform lifecycle-runtime.aar (androidx.lifecycle:lifecycle-runtime:2.2.0) with AarTransform
+[        ] > Transform core.aar (androidx.core:core:1.3.1) with AarTransform
+[        ] > Transform customview.aar (androidx.customview:customview:1.0.0) with AarTransform
+[        ] > Transform vectordrawable.aar (androidx.vectordrawable:vectordrawable:1.1.0) with AarTransform
+[        ] > Transform vectordrawable-animated.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with AarTransform
+[        ] > Transform activity.aar (androidx.activity:activity:1.0.0) with AarTransform
+[        ] > Transform loader.aar (androidx.loader:loader:1.0.0) with AarTransform
+[        ] > Transform viewpager.aar (androidx.viewpager:viewpager:1.0.0) with AarTransform
+[        ] > Transform drawerlayout.aar (androidx.drawerlayout:drawerlayout:1.0.0) with AarTransform
+[        ] > Transform appcompat-resources.aar (androidx.appcompat:appcompat-resources:1.1.0) with AarTransform
+[        ] > Transform fragment.aar (androidx.fragment:fragment:1.1.0) with AarTransform
+[        ] > Transform appcompat.aar (androidx.appcompat:appcompat:1.1.0) with AarTransform
+[  +86 ms] > Transform appcompat.aar (androidx.appcompat:appcompat:1.1.0) with AarTransform
+[        ] > Task :app:preBuild UP-TO-DATE
+[        ] > Task :app:extractProguardFiles UP-TO-DATE
+[        ] > Task :flutter_webview_plugin:preBuild UP-TO-DATE
+[        ] > Task :flutter_webview_plugin:preReleaseBuild UP-TO-DATE
+[        ] > Task :flutter_webview_plugin:checkReleaseManifest UP-TO-DATE
+[        ] > Task :flutter_webview_plugin:processReleaseManifest UP-TO-DATE
+[        ] > Task :share:preBuild UP-TO-DATE
+[        ] > Task :share:preReleaseBuild UP-TO-DATE
+[        ] > Task :share:checkReleaseManifest UP-TO-DATE
+[        ] > Task :share:processReleaseManifest UP-TO-DATE
+[        ] > Task :shared_preferences:preBuild UP-TO-DATE
+[   +9 ms] > Task :shared_preferences:preReleaseBuild UP-TO-DATE
+[        ] > Task :shared_preferences:checkReleaseManifest UP-TO-DATE
+[  +89 ms] > Task :shared_preferences:processReleaseManifest UP-TO-DATE
+[        ] > Task :sqflite:preBuild UP-TO-DATE
+[        ] > Task :sqflite:preReleaseBuild UP-TO-DATE
+[        ] > Task :sqflite:checkReleaseManifest UP-TO-DATE
+[        ] > Task :sqflite:processReleaseManifest UP-TO-DATE
+[        ] > Task :url_launcher:preBuild UP-TO-DATE
+[        ] > Task :url_launcher:preReleaseBuild UP-TO-DATE
+[        ] > Task :url_launcher:checkReleaseManifest UP-TO-DATE
+[        ] > Task :url_launcher:processReleaseManifest UP-TO-DATE
+[  +99 ms] > Task :app:preReleaseBuild UP-TO-DATE
+[        ] > Transform interpolator.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+[        ] > Transform core.aar (androidx.core:core:1.1.0) with JetifyTransform
+[        ] > Transform cursoradapter.aar (androidx.cursoradapter:cursoradapter:1.0.0) with AarTransform
+[        ] > Transform vectordrawable.aar (androidx.vectordrawable:vectordrawable:1.1.0) with AarTransform
+[        ] > Transform vectordrawable-animated.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with AarTransform
+[        ] > Transform drawerlayout.aar (androidx.drawerlayout:drawerlayout:1.0.0) with AarTransform
+[        ] > Transform appcompat-resources.aar (androidx.appcompat:appcompat-resources:1.1.0) with AarTransform
+[        ] > Transform appcompat.aar (androidx.appcompat:appcompat:1.1.0) with AarTransform
+[        ] > Task :share:compileReleaseAidl NO-SOURCE
+[        ] > Transform lifecycle-viewmodel.aar (androidx.lifecycle:lifecycle-viewmodel:2.1.0) with AarTransform
+[        ] > Transform versionedparcelable.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with AarTransform
+[        ] > Transform core-runtime.aar (androidx.arch.core:core-runtime:2.0.0) with AarTransform
+[        ] > Transform lifecycle-livedata-core.aar (androidx.lifecycle:lifecycle-livedata-core:2.0.0) with AarTransform
+[        ] > Transform lifecycle-livedata.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with AarTransform
+[        ] > Transform savedstate.aar (androidx.savedstate:savedstate:1.0.0) with AarTransform
+[        ] > Transform lifecycle-runtime.aar (androidx.lifecycle:lifecycle-runtime:2.2.0) with AarTransform
+[        ] > Transform core.aar (androidx.core:core:1.3.1) with AarTransform
+[        ] > Transform customview.aar (androidx.customview:customview:1.0.0) with AarTransform
+[        ] > Transform loader.aar (androidx.loader:loader:1.0.0) with AarTransform
+[        ] > Transform viewpager.aar (androidx.viewpager:viewpager:1.0.0) with AarTransform
+[        ] > Transform activity.aar (androidx.activity:activity:1.0.0) with AarTransform
+[        ] > Transform fragment.aar (androidx.fragment:fragment:1.1.0) with AarTransform
+[        ] > Task :flutter_webview_plugin:packageReleaseRenderscript NO-SOURCE
+[        ] > Task :share:packageReleaseRenderscript NO-SOURCE
+[        ] > Task :shared_preferences:packageReleaseRenderscript NO-SOURCE
+[        ] > Task :sqflite:packageReleaseRenderscript NO-SOURCE
+[        ] > Task :url_launcher:packageReleaseRenderscript NO-SOURCE
+[        ] > Transform core.aar (androidx.core:core:1.1.0) with ExtractAarTransform
+[        ] > Task :app:compileReleaseRenderscript UP-TO-DATE
+[        ] > Transform core.aar (androidx.core:core:1.1.0) with AarTransform
+[        ] > Task :flutter_webview_plugin:compileReleaseAidl NO-SOURCE
+[        ] > Task :shared_preferences:compileReleaseAidl NO-SOURCE
+[        ] > Task :sqflite:compileReleaseAidl NO-SOURCE
+[        ] > Task :url_launcher:compileReleaseAidl NO-SOURCE
+[        ] > Task :app:compileReleaseAidl NO-SOURCE
+[        ] > Task :app:checkReleaseManifest UP-TO-DATE
+[        ] > Task :app:generateReleaseBuildConfig
+[        ] > Transform interpolator.aar (androidx.interpolator:interpolator:1.0.0) with LibrarySymbolTableTransform
+[        ] > Transform lifecycle-viewmodel.aar (androidx.lifecycle:lifecycle-viewmodel:2.1.0) with LibrarySymbolTableTransform
+[        ] > Transform core-runtime.aar (androidx.arch.core:core-runtime:2.0.0) with LibrarySymbolTableTransform
+[        ] > Transform cursoradapter.aar (androidx.cursoradapter:cursoradapter:1.0.0) with LibrarySymbolTableTransform
+[        ] > Transform versionedparcelable.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with LibrarySymbolTableTransform
+[        ] > Transform lifecycle-livedata-core.aar (androidx.lifecycle:lifecycle-livedata-core:2.0.0) with LibrarySymbolTableTransform
+[        ] > Transform lifecycle-livedata.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with LibrarySymbolTableTransform
+[        ] > Transform savedstate.aar (androidx.savedstate:savedstate:1.0.0) with LibrarySymbolTableTransform
+[        ] > Transform lifecycle-runtime.aar (androidx.lifecycle:lifecycle-runtime:2.2.0) with LibrarySymbolTableTransform
+[        ] > Transform core.aar (androidx.core:core:1.3.1) with LibrarySymbolTableTransform
+[        ] > Transform customview.aar (androidx.customview:customview:1.0.0) with LibrarySymbolTableTransform
+[        ] > Transform vectordrawable.aar (androidx.vectordrawable:vectordrawable:1.1.0) with LibrarySymbolTableTransform
+[        ] > Transform vectordrawable-animated.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with LibrarySymbolTableTransform
+[  +22 ms] > Transform activity.aar (androidx.activity:activity:1.0.0) with LibrarySymbolTableTransform
+[        ] > Transform loader.aar (androidx.loader:loader:1.0.0) with LibrarySymbolTableTransform
+[        ] > Transform viewpager.aar (androidx.viewpager:viewpager:1.0.0) with LibrarySymbolTableTransform
+[        ] > Transform appcompat-resources.aar (androidx.appcompat:appcompat-resources:1.1.0) with LibrarySymbolTableTransform
+[        ] > Transform drawerlayout.aar (androidx.drawerlayout:drawerlayout:1.0.0) with LibrarySymbolTableTransform
+[        ] > Transform appcompat.aar (androidx.appcompat:appcompat:1.1.0) with LibrarySymbolTableTransform
+[        ] > Transform fragment.aar (androidx.fragment:fragment:1.1.0) with LibrarySymbolTableTransform
+[        ] > Transform aapt2-linux.jar (com.android.tools.build:aapt2:3.3.2-5309881) with Aapt2Extractor
+[  +68 ms] > Task :app:cleanMergeReleaseAssets
+[        ] > Transform interpolator.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+[        ] > Transform lifecycle-viewmodel.aar (androidx.lifecycle:lifecycle-viewmodel:2.1.0) with AarTransform
+[        ] > Transform core-runtime.aar (androidx.arch.core:core-runtime:2.0.0) with AarTransform
+[        ] > Transform cursoradapter.aar (androidx.cursoradapter:cursoradapter:1.0.0) with AarTransform
+[        ] > Transform versionedparcelable.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with AarTransform
+[        ] > Transform lifecycle-livedata-core.aar (androidx.lifecycle:lifecycle-livedata-core:2.0.0) with AarTransform
+[        ] > Transform lifecycle-livedata.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with AarTransform
+[        ] > Transform savedstate.aar (androidx.savedstate:savedstate:1.0.0) with AarTransform
+[        ] > Transform lifecycle-runtime.aar (androidx.lifecycle:lifecycle-runtime:2.2.0) with AarTransform
+[        ] > Transform core.aar (androidx.core:core:1.3.1) with AarTransform
+[        ] > Transform customview.aar (androidx.customview:customview:1.0.0) with AarTransform
+[        ] > Transform vectordrawable.aar (androidx.vectordrawable:vectordrawable:1.1.0) with AarTransform
+[        ] > Transform vectordrawable-animated.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with AarTransform
+[        ] > Transform activity.aar (androidx.activity:activity:1.0.0) with AarTransform
+[        ] > Transform loader.aar (androidx.loader:loader:1.0.0) with AarTransform
+[        ] > Transform viewpager.aar (androidx.viewpager:viewpager:1.0.0) with AarTransform
+[        ] > Transform drawerlayout.aar (androidx.drawerlayout:drawerlayout:1.0.0) with AarTransform
+[        ] > Transform appcompat-resources.aar (androidx.appcompat:appcompat-resources:1.1.0) with AarTransform
+[        ] > Transform fragment.aar (androidx.fragment:fragment:1.1.0) with AarTransform
+[        ] > Transform appcompat.aar (androidx.appcompat:appcompat:1.1.0) with AarTransform
+[        ] > Task :app:mergeReleaseShaders UP-TO-DATE
+[        ] > Task :app:compileReleaseShaders UP-TO-DATE
+[        ] > Task :app:generateReleaseAssets UP-TO-DATE
+[        ] > Task :flutter_webview_plugin:mergeReleaseShaders UP-TO-DATE
+[        ] > Task :flutter_webview_plugin:compileReleaseShaders UP-TO-DATE
+[        ] > Task :flutter_webview_plugin:generateReleaseAssets UP-TO-DATE
+[        ] > Task :flutter_webview_plugin:packageReleaseAssets UP-TO-DATE
+[        ] > Task :share:mergeReleaseShaders UP-TO-DATE
+[        ] > Task :share:compileReleaseShaders UP-TO-DATE
+[        ] > Task :share:generateReleaseAssets UP-TO-DATE
+[        ] > Task :share:packageReleaseAssets UP-TO-DATE
+[        ] > Task :shared_preferences:mergeReleaseShaders UP-TO-DATE
+[        ] > Task :shared_preferences:compileReleaseShaders UP-TO-DATE
+[        ] > Task :shared_preferences:generateReleaseAssets UP-TO-DATE
+[        ] > Task :shared_preferences:packageReleaseAssets UP-TO-DATE
+[        ] > Task :sqflite:mergeReleaseShaders UP-TO-DATE
+[        ] > Task :sqflite:compileReleaseShaders UP-TO-DATE
+[        ] > Task :sqflite:generateReleaseAssets UP-TO-DATE
+[        ] > Task :sqflite:packageReleaseAssets UP-TO-DATE
+[        ] > Task :url_launcher:mergeReleaseShaders UP-TO-DATE
+[        ] > Task :url_launcher:compileReleaseShaders UP-TO-DATE
+[        ] > Task :url_launcher:generateReleaseAssets UP-TO-DATE
+[        ] > Task :url_launcher:packageReleaseAssets UP-TO-DATE
+[        ] > Task :app:mergeReleaseAssets
+[  +90 ms] > Task :app:copyFlutterAssetsRelease
+[        ] > Task :app:mainApkListPersistenceRelease
+[        ] > Transform interpolator.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+[        ] > Transform lifecycle-viewmodel.aar (androidx.lifecycle:lifecycle-viewmodel:2.1.0) with AarTransform
+[        ] > Transform core-runtime.aar (androidx.arch.core:core-runtime:2.0.0) with AarTransform
+[        ] > Transform cursoradapter.aar (androidx.cursoradapter:cursoradapter:1.0.0) with AarTransform
+[        ] > Transform versionedparcelable.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with AarTransform
+[        ] > Transform lifecycle-livedata-core.aar (androidx.lifecycle:lifecycle-livedata-core:2.0.0) with AarTransform
+[        ] > Transform lifecycle-livedata.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with AarTransform
+[        ] > Transform savedstate.aar (androidx.savedstate:savedstate:1.0.0) with AarTransform
+[        ] > Transform lifecycle-runtime.aar (androidx.lifecycle:lifecycle-runtime:2.2.0) with AarTransform
+[        ] > Transform core.aar (androidx.core:core:1.3.1) with AarTransform
+[        ] > Transform customview.aar (androidx.customview:customview:1.0.0) with AarTransform
+[        ] > Transform vectordrawable.aar (androidx.vectordrawable:vectordrawable:1.1.0) with AarTransform
+[        ] > Transform vectordrawable-animated.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with AarTransform
+[        ] > Transform activity.aar (androidx.activity:activity:1.0.0) with AarTransform
+[        ] > Transform loader.aar (androidx.loader:loader:1.0.0) with AarTransform
+[        ] > Transform viewpager.aar (androidx.viewpager:viewpager:1.0.0) with AarTransform
+[        ] > Transform drawerlayout.aar (androidx.drawerlayout:drawerlayout:1.0.0) with AarTransform
+[        ] > Transform fragment.aar (androidx.fragment:fragment:1.1.0) with AarTransform
+[  +91 ms] > Transform appcompat-resources.aar (androidx.appcompat:appcompat-resources:1.1.0) with AarTransform
+[        ] > Task :app:generateReleaseResValues UP-TO-DATE
+[        ] > Task :app:generateReleaseResources UP-TO-DATE
+[        ] > Transform interpolator.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+[        ] > Transform cursoradapter.aar (androidx.cursoradapter:cursoradapter:1.0.0) with AarTransform
+[        ] > Transform core.aar (androidx.core:core:1.1.0) with AarTransform
+[        ] > Transform vectordrawable.aar (androidx.vectordrawable:vectordrawable:1.1.0) with AarTransform
+[        ] > Transform vectordrawable-animated.aar (androidx.vectordrawable:vectordrawable-animated:1.1.0) with AarTransform
+[        ] > Transform drawerlayout.aar (androidx.drawerlayout:drawerlayout:1.0.0) with AarTransform
+[        ] > Transform appcompat-resources.aar (androidx.appcompat:appcompat-resources:1.1.0) with AarTransform
+[        ] > Transform appcompat.aar (androidx.appcompat:appcompat:1.1.0) with AarTransform
+[        ] > Task :flutter_webview_plugin:compileReleaseRenderscript UP-TO-DATE
+[        ] > Task :flutter_webview_plugin:generateReleaseResValues UP-TO-DATE
+[        ] > Task :flutter_webview_plugin:generateReleaseResources UP-TO-DATE
+[        ] > Transform appcompat.aar (androidx.appcompat:appcompat:1.1.0) with AarTransform
+[        ] > Task :flutter_webview_plugin:packageReleaseResources UP-TO-DATE
+[        ] > Task :share:compileReleaseRenderscript UP-TO-DATE
+[        ] > Task :share:generateReleaseResValues UP-TO-DATE
+[        ] > Task :share:generateReleaseResources UP-TO-DATE
+[        ] > Task :share:packageReleaseResources UP-TO-DATE
+[        ] > Task :shared_preferences:compileReleaseRenderscript UP-TO-DATE
+[        ] > Task :shared_preferences:generateReleaseResValues UP-TO-DATE
+[        ] > Task :shared_preferences:generateReleaseResources UP-TO-DATE
+[        ] > Task :shared_preferences:packageReleaseResources UP-TO-DATE
+[        ] > Task :sqflite:compileReleaseRenderscript UP-TO-DATE
+[        ] > Task :sqflite:generateReleaseResValues UP-TO-DATE
+[        ] > Task :sqflite:generateReleaseResources UP-TO-DATE
+[        ] > Task :sqflite:packageReleaseResources UP-TO-DATE
+[        ] > Task :url_launcher:compileReleaseRenderscript UP-TO-DATE
+[        ] > Task :url_launcher:generateReleaseResValues UP-TO-DATE
+[        ] > Task :url_launcher:generateReleaseResources UP-TO-DATE
+[        ] > Task :url_launcher:packageReleaseResources UP-TO-DATE
+[+7122 ms] > Task :app:mergeReleaseResources FAILED
+[        ] 55 actionable tasks: 7 executed, 48 up-to-date
+[ +777 ms] Running Gradle task 'assembleRelease'... (completed in 27.3s)
+[   +3 ms] The built failed likely due to AndroidX incompatibilities in a plugin. The tool is about to try using Jetfier to solve the incompatibility.
+[   +9 ms] Building plugin flutter_webview_plugin...
+[  +35 ms] Running Gradle task 'assembleAarRelease'...
+[  +20 ms] gradle.properties already sets `android.enableR8`
+[  +35 ms] Using gradle from /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_webview_plugin-0.3.11/android/gradlew.
+[        ] /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_webview_plugin-0.3.11/android/gradlew mode: 33261 rwxr-xr-x.
+[   +5 ms] executing: [/home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_webview_plugin-0.3.11/android/] /home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_webview_plugin-0.3.11/android/gradlew -I=/home/demo/flutter/packages/flutter_tools/gradle/aar_init_script.gradle -Pflutter-root=/home/demo/flutter -Poutput-dir=/home/demo/Documents/flutter/instanews/build/app -Pis-plugin=true -PbuildNumber=1.0 -Pverbose=true -Pfont-subset=true -Ptarget-platform=android-arm,android-arm64,android-x64 assembleAarRelease
+[+14299 ms]          *********************************************************
+            WARNING: This version of flutter_webview_plugin will break your Android build if it or its dependencies aren't compatible with AndroidX.
+                     See https://goo.gl/CP92wY for more information on the problem and how to fix it.
+                     This warning prints for all Android build failures. The real root cause of the error may be unrelated.
+                     *********************************************************
+
+
+            FAILURE: Build failed with an exception.
+
+            * What went wrong:
+            Could not determine the dependencies of task ':compileReleaseAidl'.
+            > SDK location not found. Define location with an ANDROID_SDK_ROOT environment variable or by setting the sdk.dir path in your project's local properties file at '/home/demo/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_webview_plugin-0.3.11/android/local.properties'.
+
+            * Try:
+            Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+            * Get more help at https://help.gradle.org
+
+            BUILD FAILED in 13s
+[   +1 ms] Running Gradle task 'assembleAarRelease'... (completed in 14.4s)
+[   +1 ms]          *********************************************************
+           WARNING: This version of flutter_webview_plugin will break your Android build if it or its dependencies aren't compatible with AndroidX.
+                    See https://goo.gl/CP92wY for more information on the problem and how to fix it.
+                    This warning prints for all Android build failures. The real root cause of the error may be unrelated.
+                    *********************************************************
+
+[   +8 ms] "flutter apk" took 43,222ms.
+[ +256 ms] ensureAnalyticsSent: 253ms
+[   +3 ms] Running shutdown hooks
+[        ] Shutdown hooks complete
+[        ] exiting with code 1
