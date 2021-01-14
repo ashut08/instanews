@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:instanews/data/sharedpref.dart';
 import 'dart:convert';
 
 import 'package:instanews/models/post.dart';
@@ -10,7 +11,7 @@ import 'package:share/share.dart';
 import 'package:sqflite/sqflite.dart';
 
 import 'package:path/path.dart' as p;
-import 'package:flare_flutter/flare_actor.dart';
+
 import 'package:flare_flutter/flare_controls.dart';
 
 class HomePage extends StatefulWidget {
@@ -19,6 +20,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  SPsetting settings;
+  int settingColor = 0xff1976d2;
   String url =
       "http://newsapi.org/v2/top-headlines?apiKey=33b24be8d9404eef8fed1bee30c73f2f&country=in";
   bool isLoaded = false;
@@ -48,6 +51,9 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
+    settings = SPsetting();
+    getSettings();
+
     _fetchData();
     super.initState();
   }
@@ -230,6 +236,15 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  Future getSettings() async {
+    settings = SPsetting();
+    settings.init().then((value) {
+      setState(() {
+        settingColor = settings.getColor();
+      });
+    });
+  }
+
   Future _savePost(Post post) async {
     final Future<Database> database =
         openDatabase(p.join(await getDatabasesPath(), 'instanews.db'),
@@ -246,6 +261,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Color(settingColor),
           actions: <Widget>[
             IconButton(
               icon: Icon(Icons.search),

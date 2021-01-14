@@ -28,7 +28,8 @@ dependencies:
   share:
   sqflite:
   flare_flutter:
-
+  shared_preferences: ^0.5.12+4
+  contactus: ^1.1.7
 dev_dependencies:
   flutter_test:
     sdk: flutter

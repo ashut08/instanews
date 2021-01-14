@@ -102,7 +102,7 @@ class DrawerWidget extends StatelessWidget {
                 Icons.settings,
                 color: Colors.blueAccent,
               ),
-              ''),
+              '/settings'),
           SizedBox(
             height: 5.0,
           ),
@@ -117,22 +117,12 @@ class DrawerWidget extends StatelessWidget {
             height: 5.0,
           ),
           _buildListTile(
-              "Help Centre",
-              Icon(
-                Icons.help,
-                color: Colors.blueAccent,
-              ),
-              ''),
-          SizedBox(
-            height: 5.0,
-          ),
-          _buildListTile(
               "Contact Us",
               Icon(
                 Icons.contacts,
                 color: Colors.blueAccent,
               ),
-              ''),
+              '/contactus'),
           SizedBox(
             height: 5.0,
           ),
@@ -142,7 +132,7 @@ class DrawerWidget extends StatelessWidget {
                 Icons.info,
                 color: Colors.blueAccent,
               ),
-              ''),
+              '/about'),
           SizedBox(
             height: 5.0,
           ),
