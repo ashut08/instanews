@@ -208,10 +208,10 @@ class _HomePageState extends State<HomePage> {
                         context: context,
                         builder: (context) {
                           return AlertDialog(
-                            title: new Text("Success"),
-                            content: new Text("Post saved successfully..."),
+                            title: Text("Success"),
+                            content: Text("Post saved successfully..."),
                             actions: <Widget>[
-                              new FlatButton(
+                              FlatButton(
                                   onPressed: () {
                                     Navigator.pop(context);
                                   },
@@ -225,7 +225,7 @@ class _HomePageState extends State<HomePage> {
                   icon: Icon(Icons.share),
                   onPressed: () {
                     Share.share(
-                        "Read this latest news from InstaNews: \n${post.title}.\n ${post.url}");
+                        "Read this latest  s from Insta s: \n${post.title}.\n ${post.url}");
                   },
                 )
               ],

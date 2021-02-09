@@ -1,10 +1,9 @@
-
 import 'package:flutter/material.dart';
 
 import 'dart:async';
 
-import 'package:instanews/pages/home_page.dart';
 
+import 'package:instanews/pages/login.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -12,7 +11,6 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-
   startSplashTimer() {
     var _duration = new Duration(seconds: 3);
     return new Timer(_duration, navigateToHome);
@@ -20,11 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   navigateToHome() {
     Navigator.pushReplacement(
-      context, 
-      MaterialPageRoute(
-        builder: (context) => HomePage()
-      )
-    );
+        context, MaterialPageRoute(builder: (context) => LoginPage()));
   }
 
   @override
@@ -42,16 +36,16 @@ class _SplashScreenState extends State<SplashScreen> {
         alignment: Alignment.center,
         child: Column(
           children: <Widget>[
-            SizedBox(height: deviceHeight * 0.21,),
+            SizedBox(
+              height: deviceHeight * 0.21,
+            ),
             Container(
               height: 275,
               width: 275,
               decoration: BoxDecoration(
-                image: DecorationImage(
-                  fit: BoxFit.fill,
-                  image: AssetImage("assets/images/news.gif")
-                )
-              ),
+                  image: DecorationImage(
+                      fit: BoxFit.fill,
+                      image: AssetImage("assets/images/news.gif"))),
             ),
             SizedBox(
               height: deviceHeight * 0.17,
@@ -59,23 +53,21 @@ class _SplashScreenState extends State<SplashScreen> {
             Text(
               "InstaNews",
               style: TextStyle(
-                fontFamily: 'Raleway',
-                color: Colors.blueAccent,
-                fontSize: 30,
-                fontWeight: FontWeight.bold
-              ),
+                  fontFamily: 'Raleway',
+                  color: Colors.blueAccent,
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold),
             ),
             Text(
               "Always be Updated",
               style: TextStyle(
-                fontFamily: 'Raleway',
-                color: Colors.black,
-                height: 1.1,
-                letterSpacing: 1.1,
-                fontWeight: FontWeight.w600,
-                wordSpacing: 1.5,
-                fontSize: 22
-              ),
+                  fontFamily: 'Raleway',
+                  color: Colors.black,
+                  height: 1.1,
+                  letterSpacing: 1.1,
+                  fontWeight: FontWeight.w600,
+                  wordSpacing: 1.5,
+                  fontSize: 22),
             )
           ],
         ),
