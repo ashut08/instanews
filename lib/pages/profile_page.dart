@@ -8,8 +8,7 @@ class ProfilePage extends StatefulWidget {
 class _ProfilePageState extends State<ProfilePage> {
   final String _fullName = "Ashutosh Singh";
   final _email = "ashusingh.unch8@gmail.com";
-  final String _bio =
-      "\"Hi, I am DevOps Enthusiast and Flutter Developer Specialist I'm currently working on remote location .";
+
   final String _followers = "2307";
   final String _posts = "24";
   final String _scores = "4500";

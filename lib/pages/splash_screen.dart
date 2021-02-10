@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'dart:async';
 
-
 import 'package:instanews/pages/login.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -47,9 +46,9 @@ class _SplashScreenState extends State<SplashScreen> {
                       fit: BoxFit.fill,
                       image: AssetImage("assets/images/news.gif"))),
             ),
-            SizedBox(
+            /*  SizedBox(
               height: deviceHeight * 0.17,
-            ),
+            ), */
             Text(
               "InstaNews",
               style: TextStyle(

@@ -54,6 +54,7 @@ flutter:
    - assets/images/news.gif
    - assets/images/sources/
    - assets/images/profile_pic.jpg
+   - assets/images/login.png
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
