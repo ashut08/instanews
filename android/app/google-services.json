@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "919616187252",
+    "project_id": "instanews-ba67a",
+    "storage_bucket": "instanews-ba67a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919616187252:android:ca2ab527ee9640881e5a21",
+        "android_client_info": {
+          "package_name": "instanews.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919616187252-dtkd2n9fic4iumrv38lib6scv002h6q6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKHUJj-GlotMhxcBYxo8bHy6oSbAA4haQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919616187252-dtkd2n9fic4iumrv38lib6scv002h6q6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

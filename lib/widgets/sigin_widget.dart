@@ -6,10 +6,15 @@ class SignInWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     TextEditingController emailController = TextEditingController();
     TextEditingController passwordController = TextEditingController();
+    final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+    //bool _autoValidate = false;
+
     Widget logo() {
       return CircleAvatar(
         backgroundColor: Colors.black,
         radius: 48.0,
+
+        /* Text("Sign In page") */
       );
     }
 
@@ -34,6 +39,7 @@ class SignInWidget extends StatelessWidget {
         controller: passwordController,
         keyboardType: TextInputType.emailAddress,
         autofocus: false,
+        obscureText: false,
         //initialValue: 'alucard@gmail.com',
         decoration: InputDecoration(
             hintText: "Enter password",
@@ -69,25 +75,30 @@ class SignInWidget extends StatelessWidget {
     }
 
     return Center(
-      child: SingleChildScrollView(
-        child: Center(
-          child: Column(children: <Widget>[
-            logo(),
-            SizedBox(
-              height: 30,
-            ),
-            _emailtextField(),
-            SizedBox(
-              height: 8,
-            ),
-            passwordField(),
-            SizedBox(height: 24.0),
-            signinButton(),
-            SizedBox(
-              height: 20,
-            ),
-            forgotButton(),
-          ]),
+      child: Form(
+        key: _formKey,
+        // ignore: deprecated_member_use
+
+        child: SingleChildScrollView(
+          child: Center(
+            child: Column(children: <Widget>[
+              logo(),
+              SizedBox(
+                height: 30,
+              ),
+              _emailtextField(),
+              SizedBox(
+                height: 8,
+              ),
+              passwordField(),
+              SizedBox(height: 24.0),
+              signinButton(),
+              SizedBox(
+                height: 20,
+              ),
+              forgotButton(),
+            ]),
+          ),
         ),
       ),
     );
