@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:instanews/pages/home_page.dart';
+import 'package:instanews/services/auth_class.dart';
 
 class SignInWidget extends StatelessWidget {
   @override
@@ -8,6 +9,7 @@ class SignInWidget extends StatelessWidget {
     TextEditingController passwordController = TextEditingController();
     final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
     //bool _autoValidate = false;
+    AuthService _authservice = AuthService();
 
     Widget logo() {
       return CircleAvatar(
@@ -54,7 +56,14 @@ class SignInWidget extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(24),
         ),
-        onPressed: () {
+        onPressed: () async {
+          dynamic result = await _authservice.signInAnom();
+          if (result == null) {
+            print("error in signin");
+          } else {
+            print("signin");
+            print(result);
+          }
           Navigator.push(
               context, MaterialPageRoute(builder: (_) => HomePage()));
         },
@@ -70,7 +79,7 @@ class SignInWidget extends StatelessWidget {
           'Forgot password?',
           style: TextStyle(color: Colors.black54),
         ),
-        onPressed: () {},
+        onPressed: () async {},
       );
     }
 
