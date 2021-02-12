@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instanews/pages/authenticate.dart';
 
 import 'dart:async';
 
@@ -17,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   navigateToHome() {
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => LoginPage()));
+        context, MaterialPageRoute(builder: (context) => Authenticate()));
   }
 
   @override

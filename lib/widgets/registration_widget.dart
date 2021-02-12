@@ -1,34 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:instanews/pages/home_page.dart';
-import 'package:instanews/pages/registration.dart';
+import 'package:instanews/pages/login.dart';
 import 'package:instanews/services/auth_class.dart';
 
-class SignInWidget extends StatefulWidget {
+class SignUp extends StatefulWidget {
   final Function toogleview;
-  SignInWidget({this.toogleview});
+  SignUp({this.toogleview});
+
   @override
-  _SignInWidgetState createState() => _SignInWidgetState();
+  _SignUpState createState() => _SignUpState();
 }
 
-class _SignInWidgetState extends State<SignInWidget> {
+class _SignUpState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
     TextEditingController emailController = TextEditingController();
     TextEditingController passwordController = TextEditingController();
     final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-    //bool _autoValidate = false;
     AuthService _authservice = AuthService();
-
-    Widget logo() {
-      return CircleAvatar(
-        backgroundColor: Colors.white,
-        radius: 48.0,
-        child: Image.asset("assets/images/login.png"),
-
-        /* Text("Sign In page") */
-      );
-    }
-
     _emailtextField() {
       return TextFormField(
         autocorrect: true,
@@ -60,53 +48,44 @@ class _SignInWidgetState extends State<SignInWidget> {
       );
     }
 
-    Widget signinButton() {
+    Widget signupButton() {
       return MaterialButton(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(24),
         ),
         onPressed: () async {
           widget.toogleview();
-          /*  dynamic result = await _authservice.signInAnom();
-          if (result == null) {
-            print("error in signin");
-          } else {
-            print("signin");
-            print(result);
-          } */
-          //Navigator.push(
-          //context, MaterialPageRoute(builder: (_) => HomePage()));
         },
         padding: EdgeInsets.all(12),
         color: Colors.lightBlueAccent,
-        child: Text('Log In', style: TextStyle(color: Colors.white)),
+        child: Text('SignUp', style: TextStyle(color: Colors.white)),
       );
     }
 
-    Widget forgotButton() {
-      return FlatButton(
-        child: Text(
-          'Forgot password?',
-          style: TextStyle(color: Colors.black54),
-        ),
-        onPressed: () {},
-      );
-    }
-
-    Widget newUserSignUp() {
+    Widget existingUserSignIn() {
       return Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text("New to InstaNews"),
+          Text("Already have a account"),
           FlatButton(
-            child: Text("Register Here"),
+            child: Text("Login"),
             onPressed: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (_) => RegistrationPage()));
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (_) => LoginPage()));
             },
           )
         ],
+      );
+    }
+
+    Widget logo() {
+      return CircleAvatar(
+        backgroundColor: Colors.black,
+        radius: 48.0,
+        //child: Image.asset("assets/images/logo.jpg"),
+
+        /* Text("Sign In page") */
       );
     }
 
@@ -128,12 +107,11 @@ class _SignInWidgetState extends State<SignInWidget> {
               ),
               passwordField(),
               SizedBox(height: 24.0),
-              signinButton(),
+              signupButton(),
               SizedBox(
                 height: 20,
               ),
-              forgotButton(),
-              newUserSignUp(),
+              existingUserSignIn(),
             ]),
           ),
         ),
