@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:instanews/pages/home_page.dart';
 import 'package:instanews/pages/login.dart';
 import 'package:instanews/services/auth_class.dart';
 
 class RegistrationPage extends StatefulWidget {
-  final Function toggleview;
-  RegistrationPage({this.toggleview});
+  /*  final Function toggleview;
+  RegistrationPage({this.toggleview}); */
 
   @override
   _RegistrationPageState createState() => _RegistrationPageState();
@@ -16,12 +17,21 @@ class _RegistrationPageState extends State<RegistrationPage> {
     TextEditingController passwordController = TextEditingController();
     final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
     AuthService _authservice = AuthService();
+    String email = "";
+    String password = "";
+    String error = "";
     _emailtextField() {
       return TextFormField(
         autocorrect: true,
         controller: emailController,
         keyboardType: TextInputType.emailAddress,
         autofocus: false,
+        onChanged: (val) {
+          setState(() {
+            email = val;
+          });
+        },
+        validator: (val) => val.isEmpty ? "Enter a name " : null,
         //initialValue: 'alucard@gmail.com',
         decoration: InputDecoration(
             hintText: "Enter email",
@@ -33,10 +43,14 @@ class _RegistrationPageState extends State<RegistrationPage> {
 
     Widget passwordField() {
       return TextFormField(
-        autocorrect: true,
+        onChanged: (val) {
+          password = val;
+        },
+        validator: (val) =>
+            val.length < 6 ? "Enter a password greater than 6 words " : null,
         controller: passwordController,
         keyboardType: TextInputType.emailAddress,
-        autofocus: false,
+
         obscureText: false,
         //initialValue: 'alucard@gmail.com',
         decoration: InputDecoration(
@@ -53,6 +67,21 @@ class _RegistrationPageState extends State<RegistrationPage> {
           borderRadius: BorderRadius.circular(24),
         ),
         onPressed: () async {
+          if (_formKey.currentState.validate()) {
+            print(email);
+            print(password);
+            dynamic result =
+                await _authservice.regWithEmailPassword(email, password);
+            if (result == null) {
+              setState(() {
+                error = "plz supply valid input";
+              });
+            } else {
+              Navigator.pushReplacement(
+                  context, MaterialPageRoute(builder: (context) => HomePage()));
+            }
+          }
+
           // widget.toogleview();
         },
         padding: EdgeInsets.all(12),
@@ -91,6 +120,15 @@ class _RegistrationPageState extends State<RegistrationPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        /*  actions: [
+          FlatButton.icon(
+            icon: Icon(Icons.person),
+            onPressed: () {
+              widget.toggleview();
+            },
+            label: Text("Sign In"),
+          )
+        ], */
         backgroundColor: Colors.blue,
         title: Text(
           "InstaNews",

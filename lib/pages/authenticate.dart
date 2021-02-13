@@ -18,13 +18,9 @@ class _AuthenticateState extends State<Authenticate> {
   @override
   Widget build(BuildContext context) {
     if (showsignin) {
-      return LoginPage(
-        toggleview: toggleview,
-      );
+      return LoginPage();
     } else {
-      return RegistrationPage(
-        toggleview: toggleview,
-      );
+      return RegistrationPage();
     }
   }
 }
