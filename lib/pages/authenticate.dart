@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+/* import 'package:flutter/material.dart';
 import 'package:instanews/pages/login.dart';
 import 'package:instanews/pages/registration.dart';
 
@@ -24,3 +24,4 @@ class _AuthenticateState extends State<Authenticate> {
     }
   }
 }
+ */

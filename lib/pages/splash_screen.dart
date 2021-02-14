@@ -5,6 +5,8 @@ import 'dart:async';
 
 import 'package:instanews/pages/login.dart';
 
+//import 'package:instanews/pages/login.dart';
+
 class SplashScreen extends StatefulWidget {
   @override
   _SplashScreenState createState() => _SplashScreenState();
@@ -18,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   navigateToHome() {
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => Authenticate()));
+        context, MaterialPageRoute(builder: (context) => LoginPage()));
   }
 
   @override

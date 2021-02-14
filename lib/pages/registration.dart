@@ -4,35 +4,27 @@ import 'package:instanews/pages/login.dart';
 import 'package:instanews/services/auth_class.dart';
 
 class RegistrationPage extends StatefulWidget {
-  /*  final Function toggleview;
-  RegistrationPage({this.toggleview}); */
-
   @override
   _RegistrationPageState createState() => _RegistrationPageState();
 }
 
 class _RegistrationPageState extends State<RegistrationPage> {
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+  AuthService _authservice = AuthService();
+  String email = "";
+  String password = "";
+  String error = "";
   Widget build(BuildContext context) {
-    TextEditingController emailController = TextEditingController();
-    TextEditingController passwordController = TextEditingController();
-    final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-    AuthService _authservice = AuthService();
-    String email = "";
-    String password = "";
-    String error = "";
     _emailtextField() {
       return TextFormField(
         autocorrect: true,
-        controller: emailController,
         keyboardType: TextInputType.emailAddress,
-        autofocus: false,
         onChanged: (val) {
           setState(() {
             email = val;
           });
         },
-        validator: (val) => val.isEmpty ? "Enter a name " : null,
-        //initialValue: 'alucard@gmail.com',
+        validator: (val) => val.isEmpty ? "Enter valid email" : null,
         decoration: InputDecoration(
             hintText: "Enter email",
             contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
@@ -48,10 +40,8 @@ class _RegistrationPageState extends State<RegistrationPage> {
         },
         validator: (val) =>
             val.length < 6 ? "Enter a password greater than 6 words " : null,
-        controller: passwordController,
-        keyboardType: TextInputType.emailAddress,
 
-        obscureText: false,
+        obscureText: true,
         //initialValue: 'alucard@gmail.com',
         decoration: InputDecoration(
             hintText: "Enter password",
@@ -79,14 +69,16 @@ class _RegistrationPageState extends State<RegistrationPage> {
             } else {
               Navigator.pushReplacement(
                   context, MaterialPageRoute(builder: (context) => HomePage()));
+              print(result);
             }
           }
-
-          // widget.toogleview();
         },
         padding: EdgeInsets.all(12),
         color: Colors.lightBlueAccent,
-        child: Text('SignUp', style: TextStyle(color: Colors.white)),
+        child: Text('SignUp',
+            style: TextStyle(
+              color: Colors.white,
+            )),
       );
     }
 
@@ -95,12 +87,22 @@ class _RegistrationPageState extends State<RegistrationPage> {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text("Already have a account"),
-          FlatButton(
-            child: Text("Login"),
+          Text(
+            "Already have a account",
+            style: TextStyle(color: Colors.black87, fontSize: 15),
+          ),
+          MaterialButton(
+            child: Text(
+              "Login",
+              style: TextStyle(color: Colors.white),
+            ),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(24),
+            ),
+            padding: EdgeInsets.all(10),
+            color: Colors.lightBlueAccent,
             onPressed: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (_) => LoginPage()));
+              Navigator.pop(context);
             },
           )
         ],
@@ -109,29 +111,22 @@ class _RegistrationPageState extends State<RegistrationPage> {
 
     Widget logo() {
       return CircleAvatar(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.white,
         radius: 48.0,
-        //child: Image.asset("assets/images/logo.jpg"),
-
-        /* Text("Sign In page") */
+        child: Image.asset(
+          "assets/images/signup.png",
+          height: 200,
+          width: 300,
+        ),
       );
     }
 
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        /*  actions: [
-          FlatButton.icon(
-            icon: Icon(Icons.person),
-            onPressed: () {
-              widget.toggleview();
-            },
-            label: Text("Sign In"),
-          )
-        ], */
         backgroundColor: Colors.blue,
         title: Text(
-          "InstaNews",
+          "SignUp Page",
           style: TextStyle(
               height: 1.25,
               fontWeight: FontWeight.bold,
@@ -142,8 +137,6 @@ class _RegistrationPageState extends State<RegistrationPage> {
       body: Center(
         child: Form(
           key: _formKey,
-          // ignore: deprecated_member_use
-
           child: SingleChildScrollView(
             child: Center(
               child: Column(children: <Widget>[

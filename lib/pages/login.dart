@@ -37,13 +37,13 @@ class _LoginPageState extends State<LoginPage> {
       autocorrect: true,
       controller: emailController,
       keyboardType: TextInputType.emailAddress,
-      autofocus: false,
+
       onChanged: (val) {
         setState(() {
           email = val;
         });
       },
-      validator: (val) => val.isEmpty ? "Enter a name " : null,
+      validator: (val) => val.isEmpty ? "Enter a valid email " : null,
       //initialValue: 'alucard@gmail.com',
       decoration: InputDecoration(
           hintText: "Enter email",
@@ -58,10 +58,12 @@ class _LoginPageState extends State<LoginPage> {
       autocorrect: true,
       controller: passwordController,
       keyboardType: TextInputType.emailAddress,
-      autofocus: false,
+
       obscureText: true,
       onChanged: (val) {
-        password = val;
+        setState(() {
+          password = val;
+        });
       },
       validator: (val) =>
           val.length < 6 ? "Enter a password greater than 6 words " : null,
@@ -79,34 +81,7 @@ class _LoginPageState extends State<LoginPage> {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(24),
       ),
-      onPressed: () async {
-        /* if (_formKey.currentState.validate()) {
-          print(email);
-          print(password);
-          dynamic result =
-              await _authservice.regWithEmailPassword(email, password);
-          if (result == null) {
-            setState(() {
-              error = "plz supply valid input";
-            });
-          } else {
-            Navigator.pushReplacement(
-                context, MaterialPageRoute(builder: (context) => HomePage()));
-            print(result);
-          } */
-        }
-
-        // widget.toogleview();
-        /*  dynamic result = await _authservice.signInAnom();
-          if (result == null) {
-            print("error in signin");
-          } else {
-            print("signin");
-            print(result);
-          } */
-        /* Navigator.push(
-        context, MaterialPageRoute(builder: (_) => HomePage())); */
-      },
+      onPressed: () async {},
       padding: EdgeInsets.all(12),
       color: Colors.lightBlueAccent,
       child: Text('Log In', style: TextStyle(color: Colors.white)),
@@ -115,10 +90,12 @@ class _LoginPageState extends State<LoginPage> {
 
   Widget forgotButton() {
     return FlatButton(
-      child: Text(
-        'Forgot password?',
-        style: TextStyle(color: Colors.black54),
-      ),
+      child: Text('Forgot password?',
+          style: TextStyle(
+            color: Colors.white,
+          )),
+      padding: EdgeInsets.all(12),
+      color: Colors.lightBlueAccent,
       onPressed: () {},
     );
   }
