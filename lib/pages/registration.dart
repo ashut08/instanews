@@ -14,6 +14,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
   String email = "";
   String password = "";
   String error = "";
+  bool loading = false;
   Widget build(BuildContext context) {
     _emailtextField() {
       return TextFormField(

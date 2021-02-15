@@ -81,7 +81,20 @@ class _LoginPageState extends State<LoginPage> {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(24),
       ),
-      onPressed: () async {},
+      onPressed: () async {
+        if (_formKey.currentState.validate()) {
+          dynamic result = _authservice.signInWithEmail(email, password);
+          if (result == null) {
+            setState(() {
+              error = "Could't sign with those credential";
+            });
+          } else {
+            Navigator.pushReplacement(
+                context, MaterialPageRoute(builder: (context) => HomePage()));
+            print(result);
+          }
+        }
+      },
       padding: EdgeInsets.all(12),
       color: Colors.lightBlueAccent,
       child: Text('Log In', style: TextStyle(color: Colors.white)),
