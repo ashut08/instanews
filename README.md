@@ -1,10 +1,13 @@
 # instanews
 
-Insta news app made with flutter framework using API and SQLite database .
+Insta news app made with flutter framework ,OpenSource dart ,Rest API,SQLite database and Firebase .
 
 ## Getting Started
-
+<img src="gif/login.jpg" width="300" height="500">
+<br>
+<img src="gif/.signup.jpg" width="300" height="500">
 # ScreenShot
+
 ## Demo of this app
 
 <img src="gif/demo.GIF" width="350" height="550">
