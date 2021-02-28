@@ -136,6 +136,8 @@ class DrawerWidget extends StatelessWidget {
           SizedBox(
             height: 5.0,
           ),
+          _buildListTile(
+              "Logout", Icon(Icons.logout, color: Colors.blueAccent), '/login')
         ],
       ),
     );

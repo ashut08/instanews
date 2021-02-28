@@ -1,3 +1,4 @@
+import 'package:instanews/pages/login.dart';
 import 'package:instanews/pages/profile_page.dart';
 
 import 'package:instanews/pages/saved_news_page.dart';
@@ -12,6 +13,7 @@ import 'pages/sources_page.dart';
 import 'pages/settings_pages.dart';
 import 'pages/contact.dart';
 import 'pages/about.dart';
+import 'pages/login.dart';
 
 void main() => runApp(MyApp());
 
@@ -28,7 +30,8 @@ class MyApp extends StatelessWidget {
         '/savedNews': (context) => SavedNewsPage(),
         '/settings': (context) => SettingScreen(),
         '/contactus': (context) => Contact(),
-        '/about': (context) => About()
+        '/about': (context) => About(),
+        '/login': (context) => LoginPage()
       },
     );
   }
